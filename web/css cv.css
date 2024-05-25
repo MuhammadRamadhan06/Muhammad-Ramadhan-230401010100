@@ -1,0 +1,138 @@
+*{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 0px;
+   padding: 0px;
+   box-sizing:  border-box;
+}
+body {
+     background-color: rgb(255, 255, 255) ;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.33fr 1fr;
+    width: 210mm;
+    height: 297mm;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+.container .card-one{
+    padding: 40px 35px;
+    padding-left: 30px;
+    background-color: rgb(161, 172, 181);
+    width: 100%;
+    color: rgb(49, 48, 48);
+}
+.container .card-one .profile {
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-left: -15px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid rgb(42, 46, 50);
+    background-image: url("pas foto cv.jpg");
+    background-position: center top;
+    background-size: 122%;
+}
+.container .card-one .contact-box {
+    margin-top: 10px;
+}
+.container .card-one .contact-box>*  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.container .card-one .contact-box>* .text {
+    display: inline-flex;
+    word-break: break-all;
+}
+.container .card-one .personal-box {
+    margin-top: 35px;
+}
+.container .card-one .personal-box .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+.container .card-one .personal-box .dot.active {
+    background-color: beige ;
+}
+.container .card-one .hobbies-box {
+    margin-top: 35px;
+}
+.container .card-one .hobbies-box .logo {
+    margin: 10px 0px;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    font-size: 2.8em;
+    grid-row-gap: 15px;
+}
+.container .card-two{
+    padding: 40px 35px;
+    padding-left: 30px;
+    background-color: beige;
+    width: 100%;
+    color: rgb(40, 40, 38);
+}
+.container .card-two .head-tittle {
+    font-size: 2.1em;
+    color: rgb(3, 3, 3);
+    font-weight: 400;
+}
+.container .card-two .job {
+    font-size: 1em;
+    color: black;
+    font-weight: 200;
+}
+.container .card-two .About-me {
+    margin-top: 35px;
+}
+.container .card-two .About-me .Text {
+    margin-top: 5px;
+    text-align: justify;
+}
+.container .card-two .group-2 {
+    margin-top: 35px;
+}
+.container .card-two .group-2 .desc {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.container .card-two .group-2 .desc ul {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.container .card-two .group-2 .desc ul::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -22px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+.container .card-two .About-me .work {
+    margin-top: 35px;
+}
+.container .card-two .desc {
+    margin-left: 10px;
+} 
+.container .card-two .desc ul .don {
+    margin-top: 10px;
+}
+.container .card-two .desc .peruri {
+    margin-top: 10px;
+} 
+.container .card-two .desc .peruri ul .mad {
+    margin-top: 10px;
+}
